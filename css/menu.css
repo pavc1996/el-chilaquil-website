@@ -1,0 +1,167 @@
+/* ============================================
+   EL CHILAQUIL - Menu Page Styles
+   ============================================ */
+
+/* --- Menu Tabs --- */
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.menu-tab {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid var(--border-medium);
+    background: var(--bg-white);
+    color: var(--text-body);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.menu-tab:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.menu-tab.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+}
+
+/* --- Menu Grid --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.menu-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition);
+}
+
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-medium);
+}
+
+.menu-card.featured {
+    border-color: rgba(200, 56, 42, 0.25);
+}
+
+.menu-card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(200, 56, 42, 0.1);
+    color: var(--primary);
+    z-index: 2;
+}
+
+.menu-card-badge.hot {
+    background: rgba(232, 150, 42, 0.12);
+    color: var(--accent);
+}
+
+.menu-card-badge.veg {
+    background: rgba(29, 181, 160, 0.1);
+    color: var(--secondary);
+}
+
+.menu-card-img {
+    height: 180px;
+    overflow: hidden;
+    background: var(--bg-section);
+}
+
+.menu-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card-img img {
+    transform: scale(1.05);
+}
+
+.menu-card-content {
+    padding: 20px;
+}
+
+.menu-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.menu-card-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.menu-price {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+.menu-card-content p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.menu-addon {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.menu-card.hidden-card {
+    display: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-tabs {
+        gap: 6px;
+    }
+
+    .menu-tab {
+        font-size: 0.78rem;
+        padding: 6px 14px;
+    }
+}

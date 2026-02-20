@@ -1,0 +1,300 @@
+/* ============================================
+   EL CHILAQUIL - Catering Page Styles
+   ============================================ */
+
+/* --- Event Types Grid --- */
+.event-types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.event-type-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--border-light);
+    background: var(--bg-white);
+}
+
+.event-type-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.event-type-img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.event-type-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-type-card:hover .event-type-img img {
+    transform: scale(1.05);
+}
+
+.event-type-body {
+    padding: 24px;
+    text-align: center;
+}
+
+.event-type-body h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text-dark);
+}
+
+.event-type-body p {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* --- Packages --- */
+.packages-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.package-card {
+    background: var(--bg-white);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 36px 28px;
+    position: relative;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.package-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-medium);
+}
+
+.package-card.highlighted {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, var(--bg-white), rgba(200, 56, 42, 0.02));
+    box-shadow: var(--shadow-md);
+    transform: scale(1.03);
+}
+
+.package-card.highlighted:hover {
+    transform: scale(1.03) translateY(-6px);
+}
+
+.package-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.package-header h4 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: var(--text-dark);
+}
+
+.package-price {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+    line-height: 1;
+}
+
+.package-price .currency {
+    font-size: 1.4rem;
+    vertical-align: super;
+    color: var(--primary);
+}
+
+.package-price .per-person {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+}
+
+.package-items {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.package-items li {
+    padding: 8px 0;
+    font-size: 0.92rem;
+    color: var(--text-body);
+    border-bottom: 1px solid var(--bg-section);
+}
+
+.package-items li:last-child {
+    border-bottom: none;
+}
+
+.packages-note {
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 24px;
+}
+
+/* --- Contact/Booking Section --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.contact-info .section-title {
+    margin-bottom: 12px;
+}
+
+.contact-info > p {
+    color: var(--text-body);
+    margin-bottom: 36px;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact-icon {
+    font-size: 1.3rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200, 56, 42, 0.06);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+}
+
+.contact-item strong {
+    display: block;
+    font-size: 0.88rem;
+    margin-bottom: 2px;
+    color: var(--text-dark);
+}
+
+.contact-item span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.social-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary) !important;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.contact-form-wrapper {
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .event-types {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .package-card.highlighted {
+        transform: none;
+    }
+
+    .package-card.highlighted:hover {
+        transform: translateY(-6px);
+    }
+
+    .event-types {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .event-types {
+        grid-template-columns: 1fr;
+    }
+}

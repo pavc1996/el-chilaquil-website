@@ -1,11 +1,11 @@
 /* ============================================
-   EL CHILAQUIL - Animations & Effects
+   EL CHILAQUIL - Animations & Effects (Trimmed)
    ============================================ */
 
 /* --- Reveal Animations --- */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(30px);
     transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                 transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -17,7 +17,7 @@
 
 .reveal-left {
     opacity: 0;
-    transform: translateX(-60px);
+    transform: translateX(-50px);
     transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                 transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -29,7 +29,7 @@
 
 .reveal-right {
     opacity: 0;
-    transform: translateX(60px);
+    transform: translateX(50px);
     transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                 transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -42,7 +42,7 @@
 /* --- Menu Card Stagger --- */
 .menu-card {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -51,64 +51,17 @@
     transform: translateY(0);
 }
 
-/* --- Hero Text Animation --- */
-.hero-content .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-}
-
-.hero-content .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.hero-content .reveal:nth-child(1) { transition-delay: 0.1s; }
-.hero-content .reveal:nth-child(2) { transition-delay: 0.2s; }
-.hero-content .reveal:nth-child(3) { transition-delay: 0.3s; }
-.hero-content .reveal:nth-child(4) { transition-delay: 0.4s; }
-
-/* --- Floating Particles (Hero) --- */
-.hero-particles {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-}
-
-.particle {
-    position: absolute;
-    font-size: 1.5rem;
-    opacity: 0.15;
-    animation: particleFloat linear infinite;
-}
-
-@keyframes particleFloat {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-    }
-    10% {
-        opacity: 0.15;
-    }
-    90% {
-        opacity: 0.15;
-    }
-    100% {
-        transform: translateY(-100px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-/* --- Magnetic Hover Effect for Cards --- */
-.event-type,
+/* --- Card Hover Effects --- */
+.event-type-card,
 .package-card,
-.testimonial-card {
+.testimonial-card,
+.menu-card {
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                 box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
                 border-color 0.4s ease;
 }
 
-/* --- Gradient Shift on Hover --- */
+/* --- Button Gradient Shift --- */
 .btn-primary {
     background-size: 200% 200%;
     background-image: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 50%, var(--primary) 100%);
@@ -117,11 +70,6 @@
 
 .btn-primary:hover {
     background-position: 100% 100%;
-}
-
-/* --- Smooth Nav Transition --- */
-#navbar {
-    transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* --- Counter Animation --- */
@@ -142,19 +90,8 @@
 }
 
 @keyframes focusGlow {
-    from { box-shadow: 0 0 0 0 rgba(212, 68, 42, 0); }
-    to { box-shadow: 0 0 0 4px rgba(212, 68, 42, 0.1); }
-}
-
-/* --- Subtle Pulse for Badges --- */
-.package-badge,
-.menu-card-badge {
-    animation: subtlePulse 3s ease-in-out infinite;
-}
-
-@keyframes subtlePulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.8; }
+    from { box-shadow: 0 0 0 0 rgba(200, 56, 42, 0); }
+    to { box-shadow: 0 0 0 4px rgba(200, 56, 42, 0.08); }
 }
 
 /* --- Scroll Progress Bar --- */
@@ -168,58 +105,8 @@
     transition: width 0.1s linear;
 }
 
-/* --- Image Placeholder Shimmer --- */
-.about-image-placeholder {
-    position: relative;
-    overflow: hidden;
-}
-
-.about-image-placeholder::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    animation: shimmer 3s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-    0% { left: -100%; }
-    100% { left: 100%; }
-}
-
-/* --- Page Transition --- */
-body {
-    animation: pageIn 0.6s ease forwards;
-}
-
-@keyframes pageIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* --- Selection Color --- */
-::selection {
-    background: rgba(212, 68, 42, 0.2);
-    color: var(--dark);
-}
-
-/* --- Smooth Scrollbar (WebKit) --- */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--dark);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--dark-700);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--gray-500);
+/* --- Marquee --- */
+@keyframes marqueeScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }

@@ -1,0 +1,5 @@
+# OS files
+.DS_Store
+
+# Images (too large for GitHub - host separately)
+images/

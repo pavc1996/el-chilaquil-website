@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | El Chilaquil - Authentic Mexican Street Food</title>
+    <meta name="description" content="Explore our full menu of authentic Mexican street food — tacos, quesadillas, chilaquiles, elotes, churros and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="page-inner">
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="catering.html" class="nav-btn">Book The Truck</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.jpg');"></div>
+        <div class="page-hero-content">
+            <span class="section-tag">The Food</span>
+            <h1 class="section-title">Our Menu</h1>
+            <p class="section-subtitle">Every dish tells a story of Mexican tradition, crafted with love and the freshest ingredients.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Menu Filter Tabs -->
+            <div class="menu-tabs reveal">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="tacos">Tacos</button>
+                <button class="menu-tab" data-category="quesadillas">Quesadillas</button>
+                <button class="menu-tab" data-category="chilaquiles">Chilaquiles</button>
+                <button class="menu-tab" data-category="street-food">Street Food</button>
+                <button class="menu-tab" data-category="dessert">Dessert</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Tacos -->
+                <div class="menu-card" data-category="tacos">
+                    <div class="menu-card-badge">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.jpg" alt="Grilled Chicken Taco" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Grilled Chicken Taco</h3>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Tender grilled chicken topped with onion and cilantro, seasoned with traditional Mexican spices.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="tacos">
+                    <div class="menu-card-badge hot">Spicy</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9735.jpg" alt="Pastor Taco" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Pastor Taco</h3>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Smoky marinated pork topped with onion, cilantro, and a touch of sweet pineapple.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="tacos">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9765.jpg" alt="Beef Barbacoa Taco" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Beef Barbacoa Taco</h3>
+                            <span class="menu-price">$6.50</span>
+                        </div>
+                        <p>Slow-cooked shredded beef topped with onion and cilantro, infused with bold Mexican spices.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="tacos">
+                    <div class="menu-card-badge veg">Veggie</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Vegetable Fajita Taco" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Vegetable Fajita Taco</h3>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p>Saut&eacute;ed peppers, onions, and mushrooms with spices, finished with melted cheese.</p>
+                    </div>
+                </div>
+
+                <!-- Quesadillas -->
+                <div class="menu-card" data-category="quesadillas">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9653.jpg" alt="Cheese Quesadilla" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Cheese Quesadilla</h3>
+                            <span class="menu-price">$8.00</span>
+                        </div>
+                        <p>Golden grilled flour tortilla filled with perfectly melted cheese.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="quesadillas">
+                    <div class="menu-card-badge">Popular</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9599.jpg" alt="Chicken Quesadilla" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chicken Quesadilla</h3>
+                            <span class="menu-price">$9.50</span>
+                        </div>
+                        <p>Grilled flour tortilla stuffed with tender chicken and melted cheese.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="quesadillas">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.jpg" alt="Pastor Quesadilla" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Pastor Quesadilla</h3>
+                            <span class="menu-price">$9.50</span>
+                        </div>
+                        <p>Smoky marinated pork with melted cheese in a crispy grilled tortilla.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="quesadillas">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9586.jpg" alt="Barbacoa Quesadilla" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Barbacoa Quesadilla</h3>
+                            <span class="menu-price">$9.50</span>
+                        </div>
+                        <p>Slow-cooked shredded beef with melted cheese in a golden tortilla.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="quesadillas">
+                    <div class="menu-card-badge veg">Veggie</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Veggie Fajita Quesadilla" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Veggie Fajita Quesadilla</h3>
+                            <span class="menu-price">$8.00</span>
+                        </div>
+                        <p>Saut&eacute;ed peppers, onions, mushrooms and garlic with melted cheese.</p>
+                    </div>
+                </div>
+
+                <!-- Chilaquiles -->
+                <div class="menu-card featured" data-category="chilaquiles">
+                    <div class="menu-card-badge">Signature</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9686.jpg" alt="Chilaquiles Verdes" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chilaquiles Verdes</h3>
+                            <span class="menu-price">$11.00</span>
+                        </div>
+                        <p>Crispy tortilla chips smothered in tangy green tomatillo sauce, topped with crema, feta cheese, and pickled onion.</p>
+                        <span class="menu-addon">+ Add protein $3.00</span>
+                    </div>
+                </div>
+
+                <div class="menu-card featured" data-category="chilaquiles">
+                    <div class="menu-card-badge">Signature</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9704.jpg" alt="Chilaquiles Rojos" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Chilaquiles Rojos</h3>
+                            <span class="menu-price">$11.00</span>
+                        </div>
+                        <p>Crispy tortilla chips covered in rich red chile sauce, finished with crema, feta cheese, and pickled onion.</p>
+                        <span class="menu-addon">+ Add protein $3.00</span>
+                    </div>
+                </div>
+
+                <!-- Street Food -->
+                <div class="menu-card" data-category="street-food">
+                    <div class="menu-card-badge">Fan Fave</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.jpg" alt="Elote" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Elote (Mexican Street Corn)</h3>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p>Corn on the cob smothered in creamy mayo, sprinkled with feta cheese, chili powder, and fresh lime.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="street-food">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9715.jpg" alt="Guacamole and Chips" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Guacamole &amp; Chips</h3>
+                            <span class="menu-price">$7.00</span>
+                        </div>
+                        <p>Freshly fried, house-cut tortilla chips with handmade guacamole &mdash; ripe avocados, tomato, onion, cilantro, and lime.</p>
+                    </div>
+                </div>
+
+                <!-- Dessert -->
+                <div class="menu-card" data-category="dessert">
+                    <div class="menu-card-badge">Must Try</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.jpg" alt="Famous Churros" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Famous Churros (2 pcs + dip)</h3>
+                            <span class="menu-price">$6.00</span>
+                        </div>
+                        <p>Golden, crispy churros tossed in cinnamon sugar. Served with your choice of chocolate, caramel, or condensed milk dip.</p>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9398.jpg" alt="Water" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Water</h3>
+                            <span class="menu-price">$1.50</span>
+                        </div>
+                        <p>Refreshing bottled water.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9413.jpg" alt="Soda" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Soda</h3>
+                            <span class="menu-price">$2.00</span>
+                        </div>
+                        <p>Coke, Diet Coke, or Iced Tea.</p>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-badge">Mexican</div>
+                    <div class="menu-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9480.jpg" alt="Jarritos" loading="lazy">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3>Jarritos</h3>
+                            <span class="menu-price">$4.00</span>
+                        </div>
+                        <p>Authentic Mexican soda in assorted fruity flavors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo">
+                    <p>Made By Mexicans. Loved By All.<br>Authentic Mexican Street Food in London, Ontario.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigate</h4>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <a href="menu.html">Tacos</a>
+                    <a href="menu.html">Quesadillas</a>
+                    <a href="menu.html">Chilaquiles</a>
+                    <a href="menu.html">Churros</a>
+                    <a href="menu.html">Street Food</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Catering</h4>
+                    <a href="catering.html">Weddings</a>
+                    <a href="catering.html">Corporate</a>
+                    <a href="catering.html">Private Events</a>
+                    <a href="catering.html">Packages</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Chilaquil. All rights reserved. De M&eacute;xico Con Amor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

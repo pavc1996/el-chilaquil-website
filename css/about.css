@@ -1,0 +1,151 @@
+/* ============================================
+   EL CHILAQUIL - About Page Styles
+   ============================================ */
+
+/* --- Founder Story --- */
+.founder-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.founder-img {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.founder-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+}
+
+.founder-text .section-tag {
+    margin-bottom: 12px;
+}
+
+.founder-text .section-title {
+    margin-bottom: 20px;
+}
+
+.founder-text p {
+    color: var(--text-body);
+    margin-bottom: 16px;
+    line-height: 1.8;
+    font-size: 1.02rem;
+}
+
+.founder-text p.lead {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+/* --- Stats Bar --- */
+.stats-bar {
+    background: var(--primary);
+    padding: 56px 0;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+}
+
+.stat-plus {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.7);
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* --- Values --- */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 40px 28px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(200, 56, 42, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.6rem;
+}
+
+.value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.value-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .founder-section {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .founder-img img {
+        height: 350px;
+    }
+
+    .stats-grid {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}

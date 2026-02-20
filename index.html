@@ -7,33 +7,25 @@
     <meta name="description" content="El Chilaquil - Made By Mexicans. Loved By All. Authentic Mexican street food, tacos, churros & catering in London, Ontario.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-    <!-- Loader -->
-    <div id="loader">
-        <div class="loader-inner">
-            <div class="loader-flame">🌶️</div>
-            <p class="loader-text">De México Con Amor</p>
-        </div>
-    </div>
+<body class="page-home">
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-el">El</span> <span class="logo-chilaquil">Chilaquil</span>
+            <a href="index.html" class="nav-logo">
+                <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img">
             </a>
             <div class="nav-links" id="navLinks">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#menu" class="nav-link">Menu</a>
-                <a href="#catering" class="nav-link">Catering</a>
-                <a href="#testimonials" class="nav-link">Reviews</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#contact" class="nav-btn">Book The Truck</a>
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="catering.html" class="nav-btn">Book The Truck</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
                 <span></span>
@@ -45,9 +37,7 @@
 
     <!-- Hero Section -->
     <section id="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-bg" style="background-image: url('images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9375.jpg');"></div>
         <div class="hero-content">
             <div class="hero-badge reveal">
                 <span>London, Ontario's Favourite Food Truck</span>
@@ -60,13 +50,13 @@
             </h1>
             <p class="hero-subtitle reveal">Authentic Mexican street food crafted with fresh ingredients, bold flavors, and recipes rooted in tradition.</p>
             <div class="hero-buttons reveal">
-                <a href="#menu" class="btn btn-primary">Explore Menu</a>
-                <a href="#contact" class="btn btn-outline">Book For Your Event</a>
+                <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                <a href="catering.html" class="btn btn-outline-white">Book For Your Event</a>
             </div>
-            <div class="hero-scroll-indicator">
-                <div class="scroll-line"></div>
-                <span>Scroll</span>
-            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
         </div>
     </section>
 
@@ -94,399 +84,82 @@
         </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about" class="section">
+    <!-- About Preview -->
+    <section class="section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-image-col reveal-left">
-                    <div class="about-image-wrapper">
-                        <div class="about-image-placeholder">
-                            <div class="placeholder-icon">🌮</div>
-                            <span>Authentic Mexican Flavors</span>
-                        </div>
-                        <div class="about-image-accent"></div>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Events Catered</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="10000">0</span><span class="stat-plus">+</span>
-                            <span class="stat-label">Happy Customers</span>
-                        </div>
-                    </div>
+            <div class="about-preview">
+                <div class="about-preview-img reveal-left">
+                    <img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9312.jpg" alt="El Chilaquil food truck" loading="lazy">
                 </div>
-                <div class="about-text-col reveal-right">
+                <div class="about-preview-text reveal-right">
                     <span class="section-tag">Our Story</span>
                     <h2 class="section-title">A Piece of Mexico <br><em>On Wheels</em></h2>
-                    <p class="about-lead">El Chilaquil was born from a dream to bring the vibrant, authentic flavors of Mexican street food to London, Ontario.</p>
-                    <p>Founded by Geiler Puerto, who grew up in Mexico surrounded by the sights, smells, and tastes of authentic street food. Every recipe carries the soul of Mexican tradition &mdash; from our slow-cooked barbacoa to our hand-rolled churros.</p>
+                    <p>El Chilaquil was born from a dream to bring the vibrant, authentic flavors of Mexican street food to London, Ontario. Founded by Geiler Puerto, every recipe carries the soul of Mexican tradition &mdash; from our slow-cooked barbacoa to our hand-rolled churros.</p>
                     <p>We don't take shortcuts. Every dish is handcrafted with fresh ingredients and traditional techniques, because real flavor can't be faked.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <div class="feature-icon">🔥</div>
-                            <div>
-                                <strong>Fresh Daily</strong>
-                                <span>Made from scratch every single day</span>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🇲🇽</div>
-                            <div>
-                                <strong>100% Authentic</strong>
-                                <span>Traditional recipes from Mexico</span>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">🎉</div>
-                            <div>
-                                <strong>Events & Catering</strong>
-                                <span>Weddings, corporate, private parties</span>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="section section-dark">
+    <!-- Featured Menu -->
+    <section class="section section-alt">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-tag">The Food</span>
-                <h2 class="section-title">Our Menu</h2>
+                <h2 class="section-title">Fan Favourites</h2>
                 <p class="section-subtitle">Every dish tells a story of Mexican tradition, crafted with love and the freshest ingredients.</p>
             </div>
-
-            <!-- Menu Filter Tabs -->
-            <div class="menu-tabs reveal">
-                <button class="menu-tab active" data-category="all">All</button>
-                <button class="menu-tab" data-category="tacos">Tacos</button>
-                <button class="menu-tab" data-category="quesadillas">Quesadillas</button>
-                <button class="menu-tab" data-category="chilaquiles">Chilaquiles</button>
-                <button class="menu-tab" data-category="street-food">Street Food</button>
-                <button class="menu-tab" data-category="dessert">Dessert</button>
-                <button class="menu-tab" data-category="drinks">Drinks</button>
+            <div class="featured-menu-grid">
+                <div class="featured-card reveal">
+                    <div class="featured-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.jpg" alt="Grilled Chicken Tacos" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3>Grilled Chicken Tacos</h3>
+                        <span class="price">$6.50</span>
+                        <p>Tender grilled chicken with onion, cilantro and traditional Mexican spices.</p>
+                    </div>
+                </div>
+                <div class="featured-card reveal">
+                    <div class="featured-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9704.jpg" alt="Chilaquiles Rojos" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3>Chilaquiles Rojos</h3>
+                        <span class="price">$11.00</span>
+                        <p>Crispy tortilla chips in rich red chile sauce with crema and feta.</p>
+                    </div>
+                </div>
+                <div class="featured-card reveal">
+                    <div class="featured-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.jpg" alt="Elote" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3>Elote (Street Corn)</h3>
+                        <span class="price">$7.00</span>
+                        <p>Corn on the cob with creamy mayo, feta, chili powder and lime.</p>
+                    </div>
+                </div>
+                <div class="featured-card reveal">
+                    <div class="featured-card-img">
+                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.jpg" alt="Famous Churros" loading="lazy">
+                    </div>
+                    <div class="featured-card-body">
+                        <h3>Famous Churros</h3>
+                        <span class="price">$6.00</span>
+                        <p>Golden churros in cinnamon sugar with chocolate, caramel or condensed milk dip.</p>
+                    </div>
+                </div>
             </div>
-
-            <!-- Menu Grid -->
-            <div class="menu-grid" id="menuGrid">
-                <!-- Tacos -->
-                <div class="menu-card" data-category="tacos">
-                    <div class="menu-card-badge">Popular</div>
-                    <div class="menu-card-emoji">🌮</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Grilled Chicken Taco</h3>
-                            <span class="menu-price">$6.50</span>
-                        </div>
-                        <p>Tender grilled chicken topped with onion and cilantro, seasoned with traditional Mexican spices.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="tacos">
-                    <div class="menu-card-badge hot">Spicy</div>
-                    <div class="menu-card-emoji">🌮</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Pastor Taco</h3>
-                            <span class="menu-price">$6.50</span>
-                        </div>
-                        <p>Smoky marinated pork topped with onion, cilantro, and a touch of sweet pineapple.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="tacos">
-                    <div class="menu-card-emoji">🌮</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Beef Barbacoa Taco</h3>
-                            <span class="menu-price">$6.50</span>
-                        </div>
-                        <p>Slow-cooked shredded beef topped with onion and cilantro, infused with bold Mexican spices.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="tacos">
-                    <div class="menu-card-badge veg">Veggie</div>
-                    <div class="menu-card-emoji">🌱</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Vegetable Fajita Taco</h3>
-                            <span class="menu-price">$6.00</span>
-                        </div>
-                        <p>Saut&eacute;ed peppers, onions, and mushrooms with spices, finished with melted cheese.</p>
-                    </div>
-                </div>
-
-                <!-- Quesadillas -->
-                <div class="menu-card" data-category="quesadillas">
-                    <div class="menu-card-emoji">🧀</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Cheese Quesadilla</h3>
-                            <span class="menu-price">$8.00</span>
-                        </div>
-                        <p>Golden grilled flour tortilla filled with perfectly melted cheese.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="quesadillas">
-                    <div class="menu-card-badge">Popular</div>
-                    <div class="menu-card-emoji">🧀</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Chicken Quesadilla</h3>
-                            <span class="menu-price">$9.50</span>
-                        </div>
-                        <p>Grilled flour tortilla stuffed with tender chicken and melted cheese.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="quesadillas">
-                    <div class="menu-card-emoji">🧀</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Pastor Quesadilla</h3>
-                            <span class="menu-price">$9.50</span>
-                        </div>
-                        <p>Smoky marinated pork with melted cheese in a crispy grilled tortilla.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="quesadillas">
-                    <div class="menu-card-emoji">🧀</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Barbacoa Quesadilla</h3>
-                            <span class="menu-price">$9.50</span>
-                        </div>
-                        <p>Slow-cooked shredded beef with melted cheese in a golden tortilla.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="quesadillas">
-                    <div class="menu-card-badge veg">Veggie</div>
-                    <div class="menu-card-emoji">🧀</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Veggie Fajita Quesadilla</h3>
-                            <span class="menu-price">$8.00</span>
-                        </div>
-                        <p>Saut&eacute;ed peppers, onions, mushrooms and garlic with melted cheese.</p>
-                    </div>
-                </div>
-
-                <!-- Chilaquiles -->
-                <div class="menu-card featured" data-category="chilaquiles">
-                    <div class="menu-card-badge">Signature</div>
-                    <div class="menu-card-emoji">🍳</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Chilaquiles Verdes</h3>
-                            <span class="menu-price">$11.00</span>
-                        </div>
-                        <p>Crispy tortilla chips smothered in tangy green tomatillo sauce, topped with crema, feta cheese, and pickled onion.</p>
-                        <span class="menu-addon">+ Add protein $3.00</span>
-                    </div>
-                </div>
-
-                <div class="menu-card featured" data-category="chilaquiles">
-                    <div class="menu-card-badge">Signature</div>
-                    <div class="menu-card-emoji">🍳</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Chilaquiles Rojos</h3>
-                            <span class="menu-price">$11.00</span>
-                        </div>
-                        <p>Crispy tortilla chips covered in rich red chile sauce, finished with crema, feta cheese, and pickled onion.</p>
-                        <span class="menu-addon">+ Add protein $3.00</span>
-                    </div>
-                </div>
-
-                <!-- Street Food -->
-                <div class="menu-card" data-category="street-food">
-                    <div class="menu-card-badge">Fan Fave</div>
-                    <div class="menu-card-emoji">🌽</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Elote (Mexican Street Corn)</h3>
-                            <span class="menu-price">$7.00</span>
-                        </div>
-                        <p>Corn on the cob smothered in creamy mayo, sprinkled with feta cheese, chili powder, and fresh lime.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="street-food">
-                    <div class="menu-card-emoji">🥑</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Guacamole & Chips</h3>
-                            <span class="menu-price">$7.00</span>
-                        </div>
-                        <p>Freshly fried, house-cut tortilla chips with handmade guacamole &mdash; ripe avocados, tomato, onion, cilantro, and lime.</p>
-                    </div>
-                </div>
-
-                <!-- Dessert -->
-                <div class="menu-card" data-category="dessert">
-                    <div class="menu-card-badge">Must Try</div>
-                    <div class="menu-card-emoji">🍩</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Famous Churros (2 pcs + dip)</h3>
-                            <span class="menu-price">$6.00</span>
-                        </div>
-                        <p>Golden, crispy churros tossed in cinnamon sugar. Served with your choice of chocolate, caramel, or condensed milk dip.</p>
-                    </div>
-                </div>
-
-                <!-- Drinks -->
-                <div class="menu-card" data-category="drinks">
-                    <div class="menu-card-emoji">💧</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Water</h3>
-                            <span class="menu-price">$1.50</span>
-                        </div>
-                        <p>Refreshing bottled water.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="drinks">
-                    <div class="menu-card-emoji">🥤</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Soda</h3>
-                            <span class="menu-price">$2.00</span>
-                        </div>
-                        <p>Coke, Diet Coke, or Iced Tea.</p>
-                    </div>
-                </div>
-
-                <div class="menu-card" data-category="drinks">
-                    <div class="menu-card-badge">Mexican</div>
-                    <div class="menu-card-emoji">🍊</div>
-                    <div class="menu-card-content">
-                        <div class="menu-card-header">
-                            <h3>Jarritos</h3>
-                            <span class="menu-price">$4.00</span>
-                        </div>
-                        <p>Authentic Mexican soda in assorted fruity flavors.</p>
-                    </div>
-                </div>
+            <div class="featured-cta reveal">
+                <a href="menu.html" class="btn btn-primary">See Full Menu</a>
             </div>
         </div>
     </section>
 
-    <!-- Catering Section -->
-    <section id="catering" class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Events & Catering</span>
-                <h2 class="section-title">Bring The Fiesta <br><em>To Your Event</em></h2>
-                <p class="section-subtitle">From intimate gatherings to grand celebrations, we bring authentic Mexican flavors that make every event unforgettable.</p>
-            </div>
-
-            <!-- Event Types -->
-            <div class="event-types reveal">
-                <div class="event-type">
-                    <div class="event-type-icon">💒</div>
-                    <h3>Weddings</h3>
-                    <p>Celebrate your day with authentic Mexican flavors to bring joy to every guest.</p>
-                </div>
-                <div class="event-type">
-                    <div class="event-type-icon">🎂</div>
-                    <h3>Private Events</h3>
-                    <p>Add vibrant Mexican flavors to your celebration and make every birthday unforgettable.</p>
-                </div>
-                <div class="event-type">
-                    <div class="event-type-icon">🏢</div>
-                    <h3>Corporate</h3>
-                    <p>Seamless catering for conferences, seminars, and corporate functions.</p>
-                </div>
-                <div class="event-type">
-                    <div class="event-type-icon">🍽️</div>
-                    <h3>Buffet Catering</h3>
-                    <p>A festive spread of authentic Mexican dishes, perfect for sharing with every guest.</p>
-                </div>
-            </div>
-
-            <!-- Packages -->
-            <h3 class="packages-title reveal">Culinary Delights Packages</h3>
-            <div class="packages-grid reveal">
-                <div class="package-card">
-                    <div class="package-badge">Most Popular</div>
-                    <div class="package-header">
-                        <h4>Package 1</h4>
-                        <div class="package-price"><span class="currency">$</span>19<span class="per-person">/person</span></div>
-                    </div>
-                    <ul class="package-items">
-                        <li>1 Main (Quesadilla or 3 Tacos)</li>
-                        <li>Churros with dipping sauce</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
-                </div>
-
-                <div class="package-card highlighted">
-                    <div class="package-badge">Best Value</div>
-                    <div class="package-header">
-                        <h4>Package 2</h4>
-                        <div class="package-price"><span class="currency">$</span>25<span class="per-person">/person</span></div>
-                    </div>
-                    <ul class="package-items">
-                        <li>1 Main (Quesadilla or 3 Tacos)</li>
-                        <li>1 Elote (Mexican Street Corn)</li>
-                        <li>Churros with Dipping Sauce</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
-                </div>
-
-                <div class="package-card">
-                    <div class="package-badge">Premium</div>
-                    <div class="package-header">
-                        <h4>Package 3</h4>
-                        <div class="package-price"><span class="currency">$</span>35<span class="per-person">/person</span></div>
-                    </div>
-                    <ul class="package-items">
-                        <li>2 Mains (Quesadilla & 3 Tacos)</li>
-                        <li>1 Elote (Mexican Street Corn)</li>
-                        <li>Churros with Dipping Sauce</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-sm">Book Now</a>
-                </div>
-
-                <div class="package-card dessert-card">
-                    <div class="package-header">
-                        <h4>Package 4</h4>
-                        <div class="package-price"><span class="currency">$</span>5<span class="per-person">/person</span></div>
-                    </div>
-                    <ul class="package-items">
-                        <li>Churros with dipping sauce</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-sm">Book Now</a>
-                </div>
-
-                <div class="package-card dessert-card">
-                    <div class="package-header">
-                        <h4>Package 5</h4>
-                        <div class="package-price"><span class="currency">$</span>8<span class="per-person">/person</span></div>
-                    </div>
-                    <ul class="package-items">
-                        <li>Churros with dipping sauce</li>
-                        <li>Ice cream</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-sm">Book Now</a>
-                </div>
-            </div>
-            <p class="packages-note reveal">Add Guac & Chips for $5 per person to any package!</p>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="section section-dark">
+    <!-- Testimonials -->
+    <section class="section">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-tag">Testimonials</span>
@@ -519,9 +192,9 @@
                     <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                     <p class="testimonial-text">"Having El Chilaquil at our wedding was the best decision we made. Our guests are STILL talking about the tacos and elotes. The team went above and beyond to make our day special. Cannot recommend enough!"</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">S&A</div>
+                        <div class="testimonial-avatar">S&amp;A</div>
                         <div>
-                            <strong>Steph & Andrew</strong>
+                            <strong>Steph &amp; Andrew</strong>
                             <span>Guelph</span>
                         </div>
                     </div>
@@ -530,88 +203,12 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
+    <!-- CTA Banner -->
+    <section class="cta-banner">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info reveal-left">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Book The Truck</h2>
-                    <p>Ready to bring the fiesta? Whether it's a wedding, corporate event, birthday party, or you just want amazing tacos &mdash; we'd love to hear from you.</p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <strong>Location</strong>
-                                <span>London, Ontario, Canada</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">🌐</div>
-                            <div>
-                                <strong>Website</strong>
-                                <span>elchilaquil.ca</span>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">📱</div>
-                            <div>
-                                <strong>Follow Us</strong>
-                                <div class="social-links">
-                                    <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
-                                    <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
-                                    <a href="#" class="social-link" aria-label="TikTok">TikTok</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-wrapper reveal-right">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="tel" id="phone" name="phone" placeholder="(519) 555-0123">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="eventType">Event Type</label>
-                            <select id="eventType" name="eventType">
-                                <option value="">Select your event</option>
-                                <option value="wedding">Wedding</option>
-                                <option value="corporate">Corporate Event</option>
-                                <option value="birthday">Birthday / Private Party</option>
-                                <option value="buffet">Buffet Catering</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="date">Event Date</label>
-                                <input type="date" id="date" name="date">
-                            </div>
-                            <div class="form-group">
-                                <label for="guests">Number of Guests</label>
-                                <input type="number" id="guests" name="guests" placeholder="50">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
-                    </form>
-                </div>
-            </div>
+            <h2 class="reveal">Bring The Fiesta To Your Event</h2>
+            <p class="reveal">From weddings to corporate events, we bring authentic Mexican flavors that make every occasion unforgettable.</p>
+            <a href="catering.html" class="btn btn-outline-white reveal">Book The Truck</a>
         </div>
     </section>
 
@@ -620,33 +217,30 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#hero" class="nav-logo">
-                        <span class="logo-el">El</span> <span class="logo-chilaquil">Chilaquil</span>
-                    </a>
+                    <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo">
                     <p>Made By Mexicans. Loved By All.<br>Authentic Mexican Street Food in London, Ontario.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Navigate</h4>
-                    <a href="#hero">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#catering">Catering</a>
-                    <a href="#contact">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="about.html">About</a>
                 </div>
                 <div class="footer-links">
                     <h4>Menu</h4>
-                    <a href="#menu">Tacos</a>
-                    <a href="#menu">Quesadillas</a>
-                    <a href="#menu">Chilaquiles</a>
-                    <a href="#menu">Churros</a>
-                    <a href="#menu">Street Food</a>
+                    <a href="menu.html">Tacos</a>
+                    <a href="menu.html">Quesadillas</a>
+                    <a href="menu.html">Chilaquiles</a>
+                    <a href="menu.html">Churros</a>
+                    <a href="menu.html">Street Food</a>
                 </div>
                 <div class="footer-links">
                     <h4>Catering</h4>
-                    <a href="#catering">Weddings</a>
-                    <a href="#catering">Corporate</a>
-                    <a href="#catering">Private Events</a>
-                    <a href="#catering">Packages</a>
+                    <a href="catering.html">Weddings</a>
+                    <a href="catering.html">Corporate</a>
+                    <a href="catering.html">Private Events</a>
+                    <a href="catering.html">Packages</a>
                 </div>
             </div>
             <div class="footer-bottom">
