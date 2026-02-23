@@ -52,4 +52,74 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(update);
     }
 
+    // --- Photo Gallery Lightbox ---
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    if (galleryItems.length > 0) {
+        const lightbox = document.createElement('div');
+        lightbox.classList.add('lightbox-overlay');
+        lightbox.innerHTML = '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+            '<button class="lightbox-arrow lightbox-prev" aria-label="Previous">&#8249;</button>' +
+            '<div class="lightbox-content"><img src="" alt=""></div>' +
+            '<button class="lightbox-arrow lightbox-next" aria-label="Next">&#8250;</button>';
+        document.body.appendChild(lightbox);
+
+        const lightboxImg = lightbox.querySelector('.lightbox-content img');
+        let currentIndex = 0;
+
+        function getImageSrc(item) {
+            const source = item.querySelector('source');
+            const img = item.querySelector('img');
+            return source ? source.srcset : (img ? img.src : '');
+        }
+
+        function getImageAlt(item) {
+            const img = item.querySelector('img');
+            return img ? img.alt : '';
+        }
+
+        function openLightbox(index) {
+            currentIndex = index;
+            lightboxImg.src = getImageSrc(galleryItems[currentIndex]);
+            lightboxImg.alt = getImageAlt(galleryItems[currentIndex]);
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            lightboxImg.src = getImageSrc(galleryItems[currentIndex]);
+            lightboxImg.alt = getImageAlt(galleryItems[currentIndex]);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            lightboxImg.src = getImageSrc(galleryItems[currentIndex]);
+            lightboxImg.alt = getImageAlt(galleryItems[currentIndex]);
+        }
+
+        galleryItems.forEach((item, i) => {
+            item.addEventListener('click', () => openLightbox(i));
+        });
+
+        lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+        lightbox.querySelector('.lightbox-prev').addEventListener('click', prevImage);
+        lightbox.querySelector('.lightbox-next').addEventListener('click', nextImage);
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+        });
+    }
+
 });

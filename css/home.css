@@ -2,7 +2,7 @@
    EL CHILAQUIL - Home Page Styles
    ============================================ */
 
-/* --- Hero --- */
+/* --- Hero (with Parallax) --- */
 #hero {
     min-height: 100vh;
     display: flex;
@@ -18,6 +18,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .hero-bg::after {
@@ -322,6 +323,112 @@
     color: var(--text-muted);
 }
 
+/* --- Testimonials Carousel (Mobile) --- */
+.carousel-nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.carousel-arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-medium);
+    background: var(--bg-white);
+    color: var(--text-body);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.carousel-arrow:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: var(--border-medium);
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--primary);
+    transform: scale(1.2);
+}
+
+/* --- Instagram Section --- */
+.instagram-section .section-header {
+    margin-bottom: 32px;
+}
+
+.instagram-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.instagram-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--radius-sm);
+}
+
+.instagram-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.instagram-item:hover img {
+    transform: scale(1.08);
+}
+
+.instagram-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0);
+    transition: background 0.3s ease;
+}
+
+.instagram-item:hover::after {
+    background: rgba(0,0,0,0.15);
+}
+
+.instagram-cta {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.instagram-cta a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.instagram-cta a:hover {
+    text-decoration: underline;
+}
+
 /* --- CTA Banner --- */
 .cta-banner {
     background: var(--primary);
@@ -350,6 +457,144 @@
     border-color: rgba(255,255,255,0.4);
 }
 
+/* ============================================
+   STATS COUNTER BAR (Homepage)
+   ============================================ */
+.home-stats-bar {
+    background: var(--primary);
+    padding: 56px 0;
+}
+
+.home-stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.home-stat {
+    text-align: center;
+}
+
+.home-stat-number {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1;
+}
+
+.home-stat-plus {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.7);
+}
+
+.home-stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* ============================================
+   UPCOMING EVENTS / FIND US
+   ============================================ */
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.event-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.event-date-badge {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.event-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.event-card .event-time {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 4px;
+}
+
+.event-card .event-address {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* ============================================
+   PRESS / MEDIA MENTIONS BAR
+   ============================================ */
+.press-bar {
+    padding: 56px 0;
+    border-top: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.press-bar .section-header {
+    margin-bottom: 32px;
+}
+
+.press-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.press-logo {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--text-muted);
+    opacity: 0.4;
+    filter: grayscale(100%);
+    transition: var(--transition);
+    letter-spacing: 0.02em;
+    cursor: default;
+}
+
+.press-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    color: var(--text-dark);
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     .about-preview {
@@ -362,11 +607,47 @@
     }
 
     .testimonials-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow: hidden;
+        transition: transform 0.4s ease;
+    }
+
+    .testimonials-grid .testimonial-card {
+        min-width: 100%;
+        flex-shrink: 0;
+    }
+
+    .carousel-nav {
+        display: flex;
     }
 
     .hero-title {
         font-size: clamp(2.2rem, 9vw, 3.5rem);
+    }
+
+    .instagram-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-bg {
+        background-attachment: scroll;
+    }
+
+    .home-stats-grid {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .press-logos {
+        gap: 32px;
+    }
+
+    .press-logo {
+        font-size: 1.1rem;
     }
 }
 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | El Chilaquil</title>
+    <meta name="description" content="Oops! This page doesn't exist. Head back to El Chilaquil for authentic Mexican street food.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+        }
+        .error-content {
+            max-width: 520px;
+        }
+        .error-code {
+            font-family: var(--font-display);
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .error-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+        .error-text {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+        .error-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body class="page-inner">
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="page-loader-spinner"></div>
+        <div class="page-loader-text">El Chilaquil</div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" style="display:none;">
+        Now booking 2025 summer events! Call <a href="tel:+15196948478">(519) 694-8478</a>
+        <button class="announcement-bar-close" aria-label="Close">&times;</button>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img"></picture>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="catering.html" class="nav-btn">Book The Truck</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Oops, this page got lost on the way to the truck!</h1>
+            <p class="error-text">Looks like this page doesn't exist. Maybe the churros ate it. Let's get you back to something delicious.</p>
+            <div class="error-links">
+                <a href="index.html" class="btn btn-primary">Back to Home</a>
+                <a href="menu.html" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

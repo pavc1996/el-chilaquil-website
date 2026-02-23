@@ -5,20 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | El Chilaquil - Our Story</title>
     <meta name="description" content="Meet the team behind El Chilaquil. Founded by Geiler Puerto, bringing authentic Mexican street food from Mexico to London, Ontario.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#C8382A">
+    <meta property="og:title" content="About Us | El Chilaquil - Our Story">
+    <meta property="og:description" content="Meet Geiler Puerto, founder of El Chilaquil. From M&eacute;rida, Yucat&aacute;n to London, Ontario.">
+    <meta property="og:image" content="images/POOJA + GEILER-1947 (2).jpg">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
 <body class="page-inner">
 
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="page-loader-spinner"></div>
+        <div class="page-loader-text">El Chilaquil</div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" style="display:none;">
+        Now booking 2025 summer events! Call <a href="tel:+15196948478">(519) 694-8478</a>
+        <button class="announcement-bar-close" aria-label="Close">&times;</button>
+    </div>
+
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img">
+                <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img"></picture>
             </a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link">Home</a>
@@ -50,15 +72,24 @@
         <div class="container">
             <div class="founder-section">
                 <div class="founder-img reveal-left">
-                    <img src="images/POOJA + GEILER-1947 (2).jpg" alt="Geiler Puerto, Founder of El Chilaquil" loading="lazy">
+                    <div class="founder-photos">
+                        <div class="founder-photo">
+                            <picture><source srcset="images/POOJA + GEILER-1947 (2).webp" type="image/webp"><img src="images/POOJA + GEILER-1947 (2).jpg" alt="Geiler Puerto, Founder of El Chilaquil" loading="lazy"></picture>
+                            <p class="photo-caption">Geiler today</p>
+                        </div>
+                        <div class="founder-photo">
+                            <picture><source srcset="images/20210719_142818(1)(1) (1).webp" type="image/webp"><img src="images/20210719_142818(1)(1) (1).jpg" alt="Young Geiler in Mexico" loading="lazy"></picture>
+                            <p class="photo-caption">Growing up in M&eacute;rida, Yucat&aacute;n</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="founder-text reveal-right">
                     <span class="section-tag">The Founder</span>
                     <h2 class="section-title">Meet Geiler Puerto</h2>
-                    <p class="lead">El Chilaquil was born from a dream to bring the vibrant, authentic flavors of Mexican street food to London, Ontario.</p>
-                    <p>Geiler grew up in Mexico surrounded by the sights, smells, and tastes of authentic street food. From bustling mercados to family kitchens, food was always at the center of life, community, and celebration.</p>
-                    <p>Every recipe at El Chilaquil carries the soul of Mexican tradition &mdash; from our slow-cooked barbacoa to our hand-rolled churros. We don't take shortcuts. Every dish is handcrafted with fresh ingredients and traditional techniques, because real flavor can't be faked.</p>
-                    <p>What started as a passion project has grown into London's favourite food truck, catering hundreds of events and serving thousands of happy customers across Ontario.</p>
+                    <p class="lead">Geiler grew up in M&eacute;rida, Yucat&aacute;n, in a household that blended culinary traditions from two Mexican regions.</p>
+                    <p>His father, originally from Hunucm&aacute;, transitioned from farming to the food business &mdash; selling tacos out of their home in the 1990s before later entering the meat industry in Canc&uacute;n. He always harboured one dream: seeing his son open a restaurant in Canada.</p>
+                    <p>His mother came from Mexico City, introducing central Mexican flavors that merged with Yucat&aacute;n cooking in their home kitchen. Together, they instilled a belief that has become El Chilaquil's guiding philosophy: <em>"a full belly means a happy heart."</em></p>
+                    <p>In 2013, Geiler moved to London, Ontario and pursued culinary education at Fanshawe College. After years of professional kitchen experience, he built his vision for authentic Mexican street food &mdash; and El Chilaquil was born. Every taco, every churro, every plate connects to generations of food, family, and cultural pride.</p>
                 </div>
             </div>
         </div>
@@ -123,7 +154,37 @@
                     <a href="catering.html" class="btn btn-primary">Book The Truck</a>
                 </div>
                 <div class="founder-img reveal-right">
-                    <img src="images/20250819_130057.jpg" alt="El Chilaquil Food Truck" loading="lazy">
+                    <picture><source srcset="images/20250819_130057.webp" type="image/webp"><img src="images/20250819_130057.jpg" alt="El Chilaquil Food Truck" loading="lazy"></picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Gallery</span>
+                <h2 class="section-title">Snapshots</h2>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9375.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9375.jpg" alt="El Chilaquil food truck setup" loading="lazy"></picture>
+                </div>
+                <div class="gallery-item">
+                    <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.jpg" alt="Fresh tacos" loading="lazy"></picture>
+                </div>
+                <div class="gallery-item">
+                    <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9525.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9525.jpg" alt="Catering event" loading="lazy"></picture>
+                </div>
+                <div class="gallery-item">
+                    <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.jpg" alt="Famous churros" loading="lazy"></picture>
+                </div>
+                <div class="gallery-item">
+                    <picture><source srcset="images/20250622_205224(1)(1)(1)(1)(1) (1).webp" type="image/webp"><img src="images/20250622_205224(1)(1)(1)(1)(1) (1).jpg" alt="Geiler with El Chilaquil truck" loading="lazy"></picture>
+                </div>
+                <div class="gallery-item">
+                    <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.jpg" alt="Elote street corn" loading="lazy"></picture>
                 </div>
             </div>
         </div>
@@ -134,8 +195,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo">
+                    <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo"></picture>
                     <p>Made By Mexicans. Loved By All.<br>Authentic Mexican Street Food in London, Ontario.</p>
+                    <p style="margin-top: 12px;"><a href="tel:+15196948478" style="color: rgba(255,255,255,0.7);">(519) 694-8478</a></p>
+                    <div style="margin-top: 12px; display: flex; gap: 16px;">
+                        <a href="https://www.instagram.com/foodtruckelchilaquil/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Instagram</a>
+                        <a href="https://www.facebook.com/elchilaquilfoodtruck" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Facebook</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p>Get updates &amp; special offers:</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p class="newsletter-success"></p>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Navigate</h4>
@@ -146,11 +220,11 @@
                 </div>
                 <div class="footer-links">
                     <h4>Menu</h4>
-                    <a href="menu.html">Tacos</a>
-                    <a href="menu.html">Quesadillas</a>
-                    <a href="menu.html">Chilaquiles</a>
-                    <a href="menu.html">Churros</a>
-                    <a href="menu.html">Street Food</a>
+                    <a href="menu.html?category=tacos">Tacos</a>
+                    <a href="menu.html?category=quesadillas">Quesadillas</a>
+                    <a href="menu.html?category=chilaquiles">Chilaquiles</a>
+                    <a href="menu.html?category=dessert">Churros</a>
+                    <a href="menu.html?category=street-food">Street Food</a>
                 </div>
                 <div class="footer-links">
                     <h4>Catering</h4>

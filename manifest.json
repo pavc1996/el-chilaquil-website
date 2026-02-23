@@ -1,0 +1,21 @@
+{
+    "name": "El Chilaquil - Authentic Mexican Street Food",
+    "short_name": "El Chilaquil",
+    "description": "Made By Mexicans. Loved By All. Authentic Mexican street food, tacos, churros & catering in London, Ontario.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#1F2937",
+    "theme_color": "#C8382A",
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

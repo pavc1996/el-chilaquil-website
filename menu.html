@@ -5,20 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | El Chilaquil - Authentic Mexican Street Food</title>
     <meta name="description" content="Explore our full menu of authentic Mexican street food — tacos, quesadillas, chilaquiles, elotes, churros and more.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#C8382A">
+    <meta property="og:title" content="Menu | El Chilaquil - Authentic Mexican Street Food">
+    <meta property="og:description" content="Explore our full menu of authentic Mexican street food — tacos, quesadillas, chilaquiles, elotes, churros and more.">
+    <meta property="og:image" content="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.jpg">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/menu.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "El Chilaquil Menu",
+        "description": "Full menu of authentic Mexican street food",
+        "hasMenuSection": [
+            {
+                "@type": "MenuSection",
+                "name": "Tacos",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Grilled Chicken Taco", "description": "Tender grilled chicken with onion, cilantro and Mexican spices", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Pastor Taco", "description": "Smoky marinated pork with onion, cilantro and pineapple", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Beef Barbacoa Taco", "description": "Slow-cooked shredded beef with onion and cilantro", "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Vegetable Fajita Taco", "description": "Sauteed peppers, onions, mushrooms with melted cheese", "offers": { "@type": "Offer", "price": "6.00", "priceCurrency": "CAD" }, "suitableForDiet": "https://schema.org/VegetarianDiet" }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Quesadillas",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Cheese Quesadilla", "offers": { "@type": "Offer", "price": "8.00", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Chicken Quesadilla", "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Pastor Quesadilla", "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Barbacoa Quesadilla", "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Veggie Fajita Quesadilla", "offers": { "@type": "Offer", "price": "8.00", "priceCurrency": "CAD" }, "suitableForDiet": "https://schema.org/VegetarianDiet" }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Chilaquiles",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Chilaquiles Verdes", "description": "Crispy tortilla chips in green tomatillo sauce with crema and feta", "offers": { "@type": "Offer", "price": "11.00", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Chilaquiles Rojos", "description": "Crispy tortilla chips in red chile sauce with crema and feta", "offers": { "@type": "Offer", "price": "11.00", "priceCurrency": "CAD" } }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Street Food",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Elote (Mexican Street Corn)", "offers": { "@type": "Offer", "price": "7.00", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Guacamole & Chips", "offers": { "@type": "Offer", "price": "7.00", "priceCurrency": "CAD" }, "suitableForDiet": "https://schema.org/VeganDiet" }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Dessert",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Famous Churros (2 pcs + dip)", "offers": { "@type": "Offer", "price": "6.00", "priceCurrency": "CAD" } }
+                ]
+            },
+            {
+                "@type": "MenuSection",
+                "name": "Drinks",
+                "hasMenuItem": [
+                    { "@type": "MenuItem", "name": "Water", "offers": { "@type": "Offer", "price": "1.50", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Soda", "offers": { "@type": "Offer", "price": "2.00", "priceCurrency": "CAD" } },
+                    { "@type": "MenuItem", "name": "Jarritos", "offers": { "@type": "Offer", "price": "4.00", "priceCurrency": "CAD" } }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body class="page-inner">
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="page-loader-spinner"></div>
+        <div class="page-loader-text">El Chilaquil</div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" style="display:none;">
+        Now booking 2025 summer events! Call <a href="tel:+15196948478">(519) 694-8478</a>
+        <button class="announcement-bar-close" aria-label="Close">&times;</button>
+    </div>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img">
+                <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img"></picture>
             </a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link">Home</a>
@@ -57,15 +142,25 @@
                 <button class="menu-tab" data-category="street-food">Street Food</button>
                 <button class="menu-tab" data-category="dessert">Dessert</button>
                 <button class="menu-tab" data-category="drinks">Drinks</button>
+                <button class="print-menu-btn" aria-label="Print menu">&#128424; Print Menu</button>
+            </div>
+
+            <!-- Dietary Filters -->
+            <div class="dietary-filters reveal">
+                <button class="dietary-filter active" data-dietary="all">All Diets</button>
+                <button class="dietary-filter" data-dietary="gf">Gluten-Free</button>
+                <button class="dietary-filter" data-dietary="vegetarian">Vegetarian</button>
+                <button class="dietary-filter" data-dietary="vegan">Vegan</button>
+                <button class="dietary-filter" data-dietary="spicy">Spicy</button>
             </div>
 
             <!-- Menu Grid -->
             <div class="menu-grid" id="menuGrid">
                 <!-- Tacos -->
-                <div class="menu-card" data-category="tacos">
+                <div class="menu-card" data-category="tacos" data-dietary="gf">
                     <div class="menu-card-badge">Popular</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.jpg" alt="Grilled Chicken Taco" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9748.jpg" alt="Grilled Chicken Taco" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -73,26 +168,28 @@
                             <span class="menu-price">$6.50</span>
                         </div>
                         <p>Tender grilled chicken topped with onion and cilantro, seasoned with traditional Mexican spices.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-gf">GF</span></div>
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="tacos">
+                <div class="menu-card" data-category="tacos" data-dietary="gf,spicy" data-spice="2">
                     <div class="menu-card-badge hot">Spicy</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9735.jpg" alt="Pastor Taco" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9735.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9735.jpg" alt="Pastor Taco" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <h3>Pastor Taco</h3>
+                            <h3>Pastor Taco <span class="spice-level">&#127798;&#127798;</span></h3>
                             <span class="menu-price">$6.50</span>
                         </div>
                         <p>Smoky marinated pork topped with onion, cilantro, and a touch of sweet pineapple.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-gf">GF</span><span class="dietary-tag tag-spicy">Spicy</span></div>
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="tacos">
+                <div class="menu-card" data-category="tacos" data-dietary="gf">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9765.jpg" alt="Beef Barbacoa Taco" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9765.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9765.jpg" alt="Beef Barbacoa Taco" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -100,13 +197,14 @@
                             <span class="menu-price">$6.50</span>
                         </div>
                         <p>Slow-cooked shredded beef topped with onion and cilantro, infused with bold Mexican spices.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-gf">GF</span></div>
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="tacos">
+                <div class="menu-card" data-category="tacos" data-dietary="vegetarian,gf">
                     <div class="menu-card-badge veg">Veggie</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Vegetable Fajita Taco" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Vegetable Fajita Taco" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -114,13 +212,14 @@
                             <span class="menu-price">$6.00</span>
                         </div>
                         <p>Saut&eacute;ed peppers, onions, and mushrooms with spices, finished with melted cheese.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span><span class="dietary-tag tag-gf">GF</span></div>
                     </div>
                 </div>
 
                 <!-- Quesadillas -->
-                <div class="menu-card" data-category="quesadillas">
+                <div class="menu-card" data-category="quesadillas" data-dietary="vegetarian">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9653.jpg" alt="Cheese Quesadilla" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9653.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9653.jpg" alt="Cheese Quesadilla" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -128,13 +227,14 @@
                             <span class="menu-price">$8.00</span>
                         </div>
                         <p>Golden grilled flour tortilla filled with perfectly melted cheese.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span></div>
                     </div>
                 </div>
 
                 <div class="menu-card" data-category="quesadillas">
                     <div class="menu-card-badge">Popular</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9599.jpg" alt="Chicken Quesadilla" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9599.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9599.jpg" alt="Chicken Quesadilla" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -145,22 +245,23 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="quesadillas">
+                <div class="menu-card" data-category="quesadillas" data-dietary="spicy" data-spice="1">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.jpg" alt="Pastor Quesadilla" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9569.jpg" alt="Pastor Quesadilla" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <h3>Pastor Quesadilla</h3>
+                            <h3>Pastor Quesadilla <span class="spice-level">&#127798;</span></h3>
                             <span class="menu-price">$9.50</span>
                         </div>
                         <p>Smoky marinated pork with melted cheese in a crispy grilled tortilla.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-spicy">Spicy</span></div>
                     </div>
                 </div>
 
                 <div class="menu-card" data-category="quesadillas">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9586.jpg" alt="Barbacoa Quesadilla" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9586.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9586.jpg" alt="Barbacoa Quesadilla" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -171,10 +272,10 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="quesadillas">
+                <div class="menu-card" data-category="quesadillas" data-dietary="vegetarian">
                     <div class="menu-card-badge veg">Veggie</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Veggie Fajita Quesadilla" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9611.jpg" alt="Veggie Fajita Quesadilla" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -182,45 +283,48 @@
                             <span class="menu-price">$8.00</span>
                         </div>
                         <p>Saut&eacute;ed peppers, onions, mushrooms and garlic with melted cheese.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span></div>
                     </div>
                 </div>
 
                 <!-- Chilaquiles -->
-                <div class="menu-card featured" data-category="chilaquiles">
+                <div class="menu-card featured" data-category="chilaquiles" data-dietary="vegetarian,gf,spicy" data-spice="2">
                     <div class="menu-card-badge">Signature</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9686.jpg" alt="Chilaquiles Verdes" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9686.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9686.jpg" alt="Chilaquiles Verdes" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <h3>Chilaquiles Verdes</h3>
+                            <h3>Chilaquiles Verdes <span class="spice-level">&#127798;&#127798;</span></h3>
                             <span class="menu-price">$11.00</span>
                         </div>
                         <p>Crispy tortilla chips smothered in tangy green tomatillo sauce, topped with crema, feta cheese, and pickled onion.</p>
                         <span class="menu-addon">+ Add protein $3.00</span>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span><span class="dietary-tag tag-gf">GF</span><span class="dietary-tag tag-spicy">Spicy</span></div>
                     </div>
                 </div>
 
-                <div class="menu-card featured" data-category="chilaquiles">
+                <div class="menu-card featured" data-category="chilaquiles" data-dietary="vegetarian,gf,spicy" data-spice="3">
                     <div class="menu-card-badge">Signature</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9704.jpg" alt="Chilaquiles Rojos" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9704.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9704.jpg" alt="Chilaquiles Rojos" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
-                            <h3>Chilaquiles Rojos</h3>
+                            <h3>Chilaquiles Rojos <span class="spice-level">&#127798;&#127798;&#127798;</span></h3>
                             <span class="menu-price">$11.00</span>
                         </div>
                         <p>Crispy tortilla chips covered in rich red chile sauce, finished with crema, feta cheese, and pickled onion.</p>
                         <span class="menu-addon">+ Add protein $3.00</span>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span><span class="dietary-tag tag-gf">GF</span><span class="dietary-tag tag-spicy">Spicy</span></div>
                     </div>
                 </div>
 
                 <!-- Street Food -->
-                <div class="menu-card" data-category="street-food">
+                <div class="menu-card" data-category="street-food" data-dietary="vegetarian,gf">
                     <div class="menu-card-badge">Fan Fave</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.jpg" alt="Elote" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9671.jpg" alt="Elote" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -228,12 +332,13 @@
                             <span class="menu-price">$7.00</span>
                         </div>
                         <p>Corn on the cob smothered in creamy mayo, sprinkled with feta cheese, chili powder, and fresh lime.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span><span class="dietary-tag tag-gf">GF</span></div>
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="street-food">
+                <div class="menu-card" data-category="street-food" data-dietary="vegan,gf">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9715.jpg" alt="Guacamole and Chips" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9715.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9715.jpg" alt="Guacamole and Chips" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -241,14 +346,15 @@
                             <span class="menu-price">$7.00</span>
                         </div>
                         <p>Freshly fried, house-cut tortilla chips with handmade guacamole &mdash; ripe avocados, tomato, onion, cilantro, and lime.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegan">Vegan</span><span class="dietary-tag tag-gf">GF</span></div>
                     </div>
                 </div>
 
                 <!-- Dessert -->
-                <div class="menu-card" data-category="dessert">
+                <div class="menu-card" data-category="dessert" data-dietary="vegetarian">
                     <div class="menu-card-badge">Must Try</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.jpg" alt="Famous Churros" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9641.jpg" alt="Famous Churros" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -256,13 +362,14 @@
                             <span class="menu-price">$6.00</span>
                         </div>
                         <p>Golden, crispy churros tossed in cinnamon sugar. Served with your choice of chocolate, caramel, or condensed milk dip.</p>
+                        <div class="dietary-tags"><span class="dietary-tag tag-vegetarian">Vegetarian</span></div>
                     </div>
                 </div>
 
                 <!-- Drinks -->
-                <div class="menu-card" data-category="drinks">
+                <div class="menu-card" data-category="drinks" data-dietary="vegan,gf">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9398.jpg" alt="Water" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9398.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9398.jpg" alt="Water" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -273,9 +380,9 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="drinks">
+                <div class="menu-card" data-category="drinks" data-dietary="vegan,gf">
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9413.jpg" alt="Soda" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9413.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9413.jpg" alt="Soda" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -286,10 +393,10 @@
                     </div>
                 </div>
 
-                <div class="menu-card" data-category="drinks">
+                <div class="menu-card" data-category="drinks" data-dietary="vegan,gf">
                     <div class="menu-card-badge">Mexican</div>
                     <div class="menu-card-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9480.jpg" alt="Jarritos" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9787.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Product Shots/20250915-335A9787.jpg" alt="Jarritos" loading="lazy"></picture>
                     </div>
                     <div class="menu-card-content">
                         <div class="menu-card-header">
@@ -300,6 +407,71 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Combo / Meal Builder -->
+            <div class="meal-builder reveal" id="mealBuilder">
+                <div class="section-header">
+                    <span class="section-tag">Build Your Plate</span>
+                    <h2 class="section-title">Create Your Combo</h2>
+                </div>
+                <div class="meal-builder-steps">
+                    <div class="meal-step" data-step="1">
+                        <div class="meal-step-number">1</div>
+                        <h4>Pick Your Main</h4>
+                        <div class="meal-step-options">
+                            <div class="meal-option" data-name="3 Tacos" data-price="6.50">
+                                <span>3 Tacos</span>
+                                <span class="meal-option-price">$6.50</span>
+                            </div>
+                            <div class="meal-option" data-name="Quesadilla" data-price="9.50">
+                                <span>Quesadilla</span>
+                                <span class="meal-option-price">$9.50</span>
+                            </div>
+                            <div class="meal-option" data-name="Chilaquiles" data-price="11.00">
+                                <span>Chilaquiles</span>
+                                <span class="meal-option-price">$11.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-step" data-step="2">
+                        <div class="meal-step-number">2</div>
+                        <h4>Pick a Side</h4>
+                        <div class="meal-step-options">
+                            <div class="meal-option" data-name="Elote" data-price="7.00">
+                                <span>Elote</span>
+                                <span class="meal-option-price">$7.00</span>
+                            </div>
+                            <div class="meal-option" data-name="Guac & Chips" data-price="7.00">
+                                <span>Guac &amp; Chips</span>
+                                <span class="meal-option-price">$7.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-step" data-step="3">
+                        <div class="meal-step-number">3</div>
+                        <h4>Drink + Dessert</h4>
+                        <div class="meal-step-options">
+                            <div class="meal-option" data-name="Churros + Jarritos" data-price="10.00">
+                                <span>Churros + Jarritos</span>
+                                <span class="meal-option-price">$10.00</span>
+                            </div>
+                            <div class="meal-option" data-name="Churros + Soda" data-price="8.00">
+                                <span>Churros + Soda</span>
+                                <span class="meal-option-price">$8.00</span>
+                            </div>
+                            <div class="meal-option" data-name="Jarritos Only" data-price="4.00">
+                                <span>Jarritos Only</span>
+                                <span class="meal-option-price">$4.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-builder-total">
+                    <div class="total-label">Your Combo Total</div>
+                    <div class="total-price">$0.00</div>
+                    <div class="total-items">Select items above</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -308,8 +480,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo">
+                    <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo"></picture>
                     <p>Made By Mexicans. Loved By All.<br>Authentic Mexican Street Food in London, Ontario.</p>
+                    <p style="margin-top: 12px;"><a href="tel:+15196948478" style="color: rgba(255,255,255,0.7);">(519) 694-8478</a></p>
+                    <div style="margin-top: 12px; display: flex; gap: 16px;">
+                        <a href="https://www.instagram.com/foodtruckelchilaquil/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Instagram</a>
+                        <a href="https://www.facebook.com/elchilaquilfoodtruck" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Facebook</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p>Get updates &amp; special offers:</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p class="newsletter-success"></p>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Navigate</h4>
@@ -320,11 +505,11 @@
                 </div>
                 <div class="footer-links">
                     <h4>Menu</h4>
-                    <a href="menu.html">Tacos</a>
-                    <a href="menu.html">Quesadillas</a>
-                    <a href="menu.html">Chilaquiles</a>
-                    <a href="menu.html">Churros</a>
-                    <a href="menu.html">Street Food</a>
+                    <a href="menu.html?category=tacos">Tacos</a>
+                    <a href="menu.html?category=quesadillas">Quesadillas</a>
+                    <a href="menu.html?category=chilaquiles">Chilaquiles</a>
+                    <a href="menu.html?category=dessert">Churros</a>
+                    <a href="menu.html?category=street-food">Street Food</a>
                 </div>
                 <div class="footer-links">
                     <h4>Catering</h4>

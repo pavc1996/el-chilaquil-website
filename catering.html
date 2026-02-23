@@ -5,20 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book The Truck | El Chilaquil - Catering & Events</title>
     <meta name="description" content="Book El Chilaquil for your next event. Weddings, corporate events, birthdays, and more. Authentic Mexican food truck catering in London, Ontario.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#C8382A">
+    <meta property="og:title" content="Book The Truck | El Chilaquil - Catering & Events">
+    <meta property="og:description" content="Book El Chilaquil for your next event. Weddings, corporate events, birthdays, and more.">
+    <meta property="og:image" content="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9312.jpg">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function(){var t=localStorage.getItem('theme');if(t==='dark'||(t!=='light'&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}})();
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/catering.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FoodService",
+        "name": "El Chilaquil Catering",
+        "description": "Authentic Mexican food truck catering for weddings, corporate events, birthdays and more in London, Ontario and surrounding areas.",
+        "provider": {
+            "@type": "FoodEstablishment",
+            "name": "El Chilaquil",
+            "telephone": "+15196948478",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "London",
+                "addressRegion": "ON",
+                "addressCountry": "CA"
+            }
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 42.9849,
+                "longitude": -81.2453
+            },
+            "geoRadius": "100000"
+        },
+        "serviceType": "Food Truck Catering",
+        "offers": [
+            { "@type": "Offer", "name": "Package 1", "price": "19", "priceCurrency": "CAD", "description": "1 Main + Churros per person" },
+            { "@type": "Offer", "name": "Package 2", "price": "25", "priceCurrency": "CAD", "description": "1 Main + Elote + Churros per person" },
+            { "@type": "Offer", "name": "Package 3", "price": "35", "priceCurrency": "CAD", "description": "2 Mains + Elote + Churros per person" }
+        ]
+    }
+    </script>
 </head>
 <body class="page-inner">
+
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="page-loader-spinner"></div>
+        <div class="page-loader-text">El Chilaquil</div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar" id="announcementBar" style="display:none;">
+        Now booking 2025 summer events! Call <a href="tel:+15196948478">(519) 694-8478</a>
+        <button class="announcement-bar-close" aria-label="Close">&times;</button>
+    </div>
 
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img">
+                <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="nav-logo-img"></picture>
             </a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html" class="nav-link">Home</a>
@@ -55,7 +111,7 @@
             <div class="event-types reveal">
                 <div class="event-type-card">
                     <div class="event-type-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9525.jpg" alt="Wedding Catering" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9525.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9525.jpg" alt="Wedding Catering" loading="lazy"></picture>
                     </div>
                     <div class="event-type-body">
                         <h3>Weddings</h3>
@@ -64,7 +120,7 @@
                 </div>
                 <div class="event-type-card">
                     <div class="event-type-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9484.jpg" alt="Private Events" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9484.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9484.jpg" alt="Private Events" loading="lazy"></picture>
                     </div>
                     <div class="event-type-body">
                         <h3>Private Events</h3>
@@ -73,7 +129,7 @@
                 </div>
                 <div class="event-type-card">
                     <div class="event-type-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9501.jpg" alt="Corporate Events" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9501.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9501.jpg" alt="Corporate Events" loading="lazy"></picture>
                     </div>
                     <div class="event-type-body">
                         <h3>Corporate</h3>
@@ -82,12 +138,42 @@
                 </div>
                 <div class="event-type-card">
                     <div class="event-type-img">
-                        <img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9509.jpg" alt="Buffet Catering" loading="lazy">
+                        <picture><source srcset="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9509.webp" type="image/webp"><img src="images/ElChilaquil/Horizontal (Website)/Environment/20250915-335A9509.jpg" alt="Buffet Catering" loading="lazy"></picture>
                     </div>
                     <div class="event-type-body">
                         <h3>Buffet Catering</h3>
                         <p>A festive spread of authentic Mexican dishes, perfect for sharing with every guest.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Simple Process</span>
+                <h2 class="section-title">How It Works</h2>
+            </div>
+            <div class="steps-container reveal">
+                <div class="step">
+                    <div class="step-circle">1</div>
+                    <div class="step-icon">&#128230;</div>
+                    <h4>Choose a Package</h4>
+                    <p>Browse our catering packages and pick the one that fits your event and budget.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">2</div>
+                    <div class="step-icon">&#128221;</div>
+                    <h4>Tell Us About Your Event</h4>
+                    <p>Fill out our booking form with your date, location, guest count, and any special requests.</p>
+                </div>
+                <div class="step">
+                    <div class="step-circle">3</div>
+                    <div class="step-icon">&#127881;</div>
+                    <h4>We Bring The Fiesta</h4>
+                    <p>We show up, set up, and serve fresh, authentic Mexican food that your guests will love.</p>
                 </div>
             </div>
         </div>
@@ -163,6 +249,110 @@
                 </div>
             </div>
             <p class="packages-note reveal">Add Guac &amp; Chips for $5 per person to any package!</p>
+
+            <!-- Cost Estimator -->
+            <div class="cost-estimator reveal">
+                <h4>Estimate Your Event Cost</h4>
+                <div class="estimator-fields">
+                    <div class="estimator-field">
+                        <label for="estPackage">Select a Package</label>
+                        <select id="estPackage">
+                            <option value="19">Package 1 — $19/person</option>
+                            <option value="25" selected>Package 2 — $25/person</option>
+                            <option value="35">Package 3 — $35/person</option>
+                            <option value="5">Package 4 (Churros) — $5/person</option>
+                            <option value="8">Package 5 (Churros + Ice Cream) — $8/person</option>
+                        </select>
+                    </div>
+                    <div class="estimator-field">
+                        <label for="estGuests">Number of Guests</label>
+                        <input type="number" id="estGuests" min="1" max="500" value="50" placeholder="50">
+                    </div>
+                    <div class="estimator-field">
+                        <label class="estimator-addon">
+                            <input type="checkbox" id="estGuac">
+                            Add Guac &amp; Chips (+$5/person)
+                        </label>
+                    </div>
+                </div>
+                <div class="estimator-result">
+                    <div class="estimator-total"><span class="currency">$</span><span id="estTotal">1250</span></div>
+                    <div class="estimator-breakdown" id="estBreakdown">50 guests × $25/person</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-section">
+                <div class="section-header reveal">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Common Questions</h2>
+                </div>
+                <div class="reveal">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How far in advance should I book?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">We recommend booking at least 2-4 weeks in advance to secure your date, especially during peak season (May through October). For large events like weddings, 1-2 months is ideal.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What is the minimum number of guests?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Our minimum for food truck catering is 30 guests. For smaller gatherings, please contact us to discuss custom options that may work for your event.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you accommodate dietary restrictions?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Absolutely! We offer vegetarian, vegan-friendly, and gluten-free options. Our corn tortillas are naturally gluten-free, and several items like guacamole and elote are vegetarian. Let us know your needs when booking.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How does the food truck setup work?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">We arrive 1-2 hours before your event to set up. We need a flat, accessible parking spot and ideally access to a power outlet (we can bring a generator if needed). All cooking is done on-site, so your guests get freshly made food.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you travel outside London, Ontario?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes! We regularly serve events across Southwestern Ontario including Kitchener-Waterloo, Guelph, Hamilton, and the GTA. A travel fee may apply for locations over 50 km from London.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps - Service Area -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Location</span>
+                <h2 class="section-title">Our Service Area</h2>
+                <p class="section-subtitle">Based in London, Ontario &mdash; serving events across Southwestern Ontario.</p>
+            </div>
+            <div class="map-container reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93169.37199675065!2d-81.31795585!3d42.98485095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C%20ON!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="El Chilaquil Service Area - London, Ontario"></iframe>
+            </div>
         </div>
     </section>
 
@@ -184,6 +374,13 @@
                             </div>
                         </div>
                         <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Phone</strong>
+                                <a href="tel:+15196948478" style="color: var(--text-body);">(519) 694-8478</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
                             <div class="contact-icon">🌐</div>
                             <div>
                                 <strong>Website</strong>
@@ -195,9 +392,8 @@
                             <div>
                                 <strong>Follow Us</strong>
                                 <div class="social-links">
-                                    <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
-                                    <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
-                                    <a href="#" class="social-link" aria-label="TikTok">TikTok</a>
+                                    <a href="https://www.instagram.com/foodtruckelchilaquil/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">Instagram</a>
+                                    <a href="https://www.facebook.com/elchilaquilfoodtruck" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">Facebook</a>
                                 </div>
                             </div>
                         </div>
@@ -256,8 +452,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo">
+                    <picture><source srcset="images/El Chilaquil Logo.webp" type="image/webp"><img src="images/El Chilaquil Logo.png" alt="El Chilaquil" class="footer-logo"></picture>
                     <p>Made By Mexicans. Loved By All.<br>Authentic Mexican Street Food in London, Ontario.</p>
+                    <p style="margin-top: 12px;"><a href="tel:+15196948478" style="color: rgba(255,255,255,0.7);">(519) 694-8478</a></p>
+                    <div style="margin-top: 12px; display: flex; gap: 16px;">
+                        <a href="https://www.instagram.com/foodtruckelchilaquil/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Instagram</a>
+                        <a href="https://www.facebook.com/elchilaquilfoodtruck" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.5);">Facebook</a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <p>Get updates &amp; special offers:</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p class="newsletter-success"></p>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Navigate</h4>
@@ -268,11 +477,11 @@
                 </div>
                 <div class="footer-links">
                     <h4>Menu</h4>
-                    <a href="menu.html">Tacos</a>
-                    <a href="menu.html">Quesadillas</a>
-                    <a href="menu.html">Chilaquiles</a>
-                    <a href="menu.html">Churros</a>
-                    <a href="menu.html">Street Food</a>
+                    <a href="menu.html?category=tacos">Tacos</a>
+                    <a href="menu.html?category=quesadillas">Quesadillas</a>
+                    <a href="menu.html?category=chilaquiles">Chilaquiles</a>
+                    <a href="menu.html?category=dessert">Churros</a>
+                    <a href="menu.html?category=street-food">Street Food</a>
                 </div>
                 <div class="footer-links">
                     <h4>Catering</h4>
